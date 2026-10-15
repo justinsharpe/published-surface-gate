@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "near-miss-gliph",
+      "pattern": "\\b[gG]liph(s)?\\b",
+      "reason": "One-letter-neighbour fence (example): the product name is `Glyph`; `Gliph` is a different word with a different root (in this example, a competitor's product). Zero instances on published surfaces — rewrite to the correct name."
+    }
+  ],
+  "allowlist": [
+    "**/published-surface-rules.json",
+    "**/published-surface-gate.py",
+    "**/test_published_surface_gate.py",
+    "**/README.md",
+    "**/analysis/**",
+    "**/competitor-intel/**"
+  ]
+}
